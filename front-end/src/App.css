@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+  
+  
+}
+
+body {
+  background-color: rgb(189, 189, 189);
+}
+
+
+
+.nbaLogo {
+  width: 100px;
+  height: 200px;
+  
+}
+
+.mlbLogo {
+  width: 150px;
+  margin-top: 60px;
+  margin-bottom: 80px
+}
+
+.nflLogo {
+  width: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.nhlLogo {
+  width: 130px;
+  margin-top: 30px
+}
+
+.displayEast {
+  background-color: black;
+  color: white;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.displayWest {
+  background-color: black;
+  color: white;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.subHeader {
+  text-decoration: underline;
+}
+
+.chooseLeagueHeader {
+  font-size: 40px;
+}
+
+.displayPlayers {
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+  margin: 25px
+  
+}
+
+.displayMlbNflStats {
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+  
+}
+
+.displayNbaNhlStats {
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+}
+
+.displayStandings {
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+ 
+}
+
+th {
+  text-align: center;
+}
+
+.displaySchedule {
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+ 
+}
+
+.displayMyTeams {
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+  font-size: 20px;
+}
+
+.navbar-nav span[role=button] {
+  padding: 15px;
+  display: inline-block;
+  line-height: 20px;
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.mainTitle {
+  font-size: 60px;
+  font-weight: bold;
+}
